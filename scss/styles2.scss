@@ -93,20 +93,33 @@ FontAwesome
 }
 .grid{
     display: inline-block;
-    margin: 20px;
+    margin: 20px 20px;
 
     img{
-        width: 280px;
-        height: 235px;
+      // width: 265px;
+      // height: 265px;
+      // padding: 12px;
+      // transition: .5s ease;
+      // margin: 0 auto;
+      width: 285px;
+      height: 275px;
+      padding: 12px;
+      transition: .5s ease;
+      margin: 16px auto;
+    }
+    img:hover{
+      -ms-transform: scale(1.2); /* IE 9 */
+      -webkit-transform: scale(1.2); /* Safari 3-8 */
+      transform: scale(1.2);
     }
     p{
       font-size: 18px;
       color:red;
       font-weight: bold;
-      // padding: 7px;
     }
     h3 {
-      padding-top:2rem;
+      padding-top:1rem;
+      font-size:1.6rem
     }
 }
 

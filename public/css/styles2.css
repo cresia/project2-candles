@@ -95,12 +95,23 @@ FontAwesome
 
 .grid {
   display: inline-block;
-  margin: 20px;
+  margin: 20px 20px;
 }
 
 .grid img {
-  width: 280px;
-  height: 235px;
+  width: 285px;
+  height: 275px;
+  padding: 12px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  margin: 16px auto;
+}
+
+.grid img:hover {
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
 }
 
 .grid p {
@@ -110,7 +121,8 @@ FontAwesome
 }
 
 .grid h3 {
-  padding-top: 2rem;
+  padding-top: 1rem;
+  font-size: 1.6rem;
 }
 
 button {
