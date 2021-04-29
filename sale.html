@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Candle_Light</title>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='./public/css/styles2.css' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.js"></script>
+</head>
+
+
+<body>
+    <div class="main-wrapper">
+
+        <div id="logo">
+            <h1>CandleLight</h1>
+        </div>
+
+        <div class="topnav">
+            <a href="home.html">Home</a>
+            <a href="sale.html">Sale</a>
+            <a href="#">Login/Sign Up</a>
+        </div>
+
+        <h1>Sale 50% Off</h1>
+
+        <div id="vue">
+            <items v-for="item in menu" v-bind:datamenu="item"></items>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="footer">
+        <p>@candleLight</p>
+    </div>
+
+
+    <script>
+        Vue.component('items', {
+            props: ['datamenu'],
+            template: `
+                    <div class="grid">
+                        <img src={{datamenu.source}}>
+                        <h3>{{datamenu.title}}</h3>
+                        <p>{{datamenu.description}}</p>
+                        <button type="button" class="btn btn-info">Add To Cart</button>
+                    </div>`
+        });
+        var app = new Vue({
+            el: '#vue',
+            data: {
+                menu: [
+                    {
+                        id: 1,
+                        source: 'https://images-na.ssl-images-amazon.com/images/I/81DNXzBMiFL._AC_SL1500_.jpg',
+                        title: 'Beautiful Day',
+                        description: '$5.00'
+                    },
+                    {
+                        id: 2,
+                        source: 'https://www.lily-flame.co.uk/uploads/images/products/verylarge/lily-flame-pink-grapefruit-candle-jar-1553074297Pink-Grapefruit-Candle-Jar-2.jpg',
+                        title: 'Beach Escape',
+                        description: '$8.00'
+                    },
+                    {
+                        id: 3,
+                        source: 'https://www.lily-flame.co.uk/uploads/images/products/verylarge/Blue_Hyacinth_Candle_Jar_1.jpg',
+                        title: 'Beach Walk',
+                        description: '$6.00'
+                    },
+                    {
+                        id: 4,
+                        source: 'https://www.classicprepmonograms.com/wp-content/uploads/2017/11/dawn-of-a-new-day-soy-candle-monogram-24.jpg',
+                        title: 'Bahama Breeze',
+                        description: '$9.00'
+                    },
+                    {
+                        id: 5,
+                        source: 'https://cdn.shopify.com/s/files/1/0253/5519/0365/products/72324-4_1_large.jpg?v=1612221229',
+                        title: 'Berrylicious',
+                        description: '$10.00'
+                    },
+                    {
+                        id: 6,
+                        source: 'https://www.lily-flame.co.uk/uploads/images/products/large/Fairy_Dust_Candle_Jar_1.jpg',
+                        title: 'Cherries on Snow',
+                        description: '$6.50'
+                    },
+                    {
+                        id: 7,
+                        source: 'https://cdn.shopify.com/s/files/1/1657/6865/products/505_journey_of_faith_candle_believe_12oz_warm_home_1024x1024.jpg?v=1492613603',
+                        title: 'Calm Night',
+                        description: '$8.50'
+                    },
+                    {
+                        id: 8,
+                        source: 'https://www.lily-flame.co.uk/uploads/images/products/verylarge/Over_the_Moon_Candle_Jar_1.jpg',
+                        title: 'Autumn Leaves',
+                        description: '$5.50'
+                    },
+                    {
+                        id: 9,
+                        source: 'https://images.squarespace-cdn.com/content/v1/57e529556b8f5b23c709fcee/1479752765761-JSX9MRDG1G8JEA4SP0G5/ke17ZwdGBToddI8pDm48kFnSM9OSIs1n4Lvatjgn0ftZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI8ZvylS5xUcciH7u0Mue40oQ6l2zL57qOhNoGaTlzuEQKMshLAGzx4R3EDFOm1kBS/joy.jpg',
+                        title: 'Night Star',
+                        description: '$9.00'
+                    },
+                    {
+                        id: 10,
+                        source: 'https://www.lily-flame.co.uk/uploads/images/products/verylarge/Blush_Candle_Jar_1.jpg',
+                        title: 'Blush Bonquet',
+                        description: '$12.50'
+                    },
+                    {
+                        id: 11,
+                        source: 'https://www.lily-flame.co.uk/uploads/images/products/verylarge/Christmas_Day_Candle_Jar_1.jpg',
+                        title: 'Christmas Wishes',
+                        description: '$11.00'
+                    },
+                    {
+                        id: 12,
+                        source: 'https://images-na.ssl-images-amazon.com/images/I/41pubXkeXnL._AC_.jpg',
+                        title: 'Clean Cotton',
+                        description: '$4.50'
+                    }
+                ]
+            }
+        });
+    </script>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  /* background-color:lightsalmon; */
+   background-color:white;
+  color: black;
+}
+
+#logo h1 {
+  display: block;
+  text-align: center;
+  font-family: 'Tangerine', serif;
+  font-size: 95px;
+  text-shadow: 4px 4px 4px #212529;
+  font-weight: bold;
+  margin: 2rem;
+  color: #f9d773d4;
+  /* color: #7fe4c2; */
+}
+
+
+/*--- HomePage Content ---------- */
+.homeContent {
+  display: flex;
+  margin-top:3rem;
+}
+
+.getInspired {
+  padding:3rem;
+  font-size:20px;
+  line-height: 1.5;
+}
+
+.getInspired h2 {
+  font-size:60px;
+  font-family: 'Lobster', cursive;
+  margin-bottom: 2rem;
+}
+
+.carousel-item {
+    height: 42rem;
+}
+
+
+/*----------- register page content-------------*/
+
+.formContainer{
+  display: flex;
+}
+
+
+/*---- Footer ----- */
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+
+.footer p {
+  margin-top:1rem;
+}
+
+/* form{
+    width: 50%;
+    padding: 4rem;
+}
+
+form h1 {
+   text-align: center;
+   margin-bottom:2rem;
+} */
+
+
+/*------- Sale Page Content -----------*/
+
+.saleTitle {
+  color: red;
+  text-align: center;
+  margin:3rem;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.col img {
+  width: 100%;
+}
+
+
+
+
+/*----------- Login, Logout, Register page -----------*/
+.field {
+  margin: 10px;
+}
+
+label, input {
+  display:block;
+}
+
+input {
+  font-family: monospace;
+  font-size: 20px;
+  border: none;
+  background: #1c232636;
+  color:black;
+  padding: 7px;
+  border: #4c5a61 solid 2px;
+  width: 300px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.title {
+  margin: 10px 0px 20px 10px
+}
+
+#error-message {
+  color: #E91E63;
+  display: block;
+  margin: 10px;
+  font-size: large;
+  max-width: fit-content;
+}

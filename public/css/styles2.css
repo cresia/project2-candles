@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+/*---------
+rgb(255,255,255)
+rgb(0,0,0)
+rgba(0,0,0,0.5)
+rgba(0,0,0,0.24)
+rgb(22, 34, 42)
+rgb(58, 96, 115)
+//Fonts:
+Bitter
+FontAwesome
+----------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Bitter";
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  /* background-color:lightsalmon; */
+  background-color: white;
+  color: black;
+}
+
+#logo h1 {
+  display: block;
+  text-align: center;
+  font-family: 'Tangerine', serif;
+  font-size: 95px;
+  text-shadow: 4px 4px 4px #212529;
+  font-weight: bold;
+  margin: 2rem;
+  color: #f9d773d4;
+  /* color: #7fe4c2; */
+}
+
+.main-wrapper h1 {
+  text-align: center;
+  color: red;
+  font-size: 50px;
+  margin: 2rem;
+  font-weight: bold;
+}
+
+/*---- Footer ----- */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  margin-top: 1rem;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+#vue {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: inline-block;
+  margin: 20px;
+}
+
+.grid img {
+  width: 280px;
+  height: 235px;
+}
+
+.grid p {
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
+
+.grid h3 {
+  padding-top: 2rem;
+}
+
+button {
+  padding: 12px 24px;
+}
+/*# sourceMappingURL=styles2.css.map */
